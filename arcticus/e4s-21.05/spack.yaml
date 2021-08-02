@@ -275,7 +275,13 @@ spack:
     - slate@2021.05.02 ~cuda
     - slepc@3.15.0
     - stc@0.9.0
-    - strumpack@5.1.1 ~slate
+#    - strumpack@5.1.1 ~slate
+#   >> 55    make: *** [Makefile.prebuild:70: getarch_2nd] Error 1
+#     56    Makefile:154: *** OpenBLAS: Detecting CPU failed. Please set TARGET explicitly, e
+#           .g. make TARGET=your_cpu_target. Please read README for the detail..  Stop.
+
+#==> Warning: Skipping build of strumpack-5.1.1-bwxfaxuwcwph3zazs6n3arljadx3hwkv since openbla
+#s-0.3.10-hhkut7o6zuilwqxcz7uwc6pecm25cjim failed
     - sundials@5.7.0
     - superlu@5.2.1
     - superlu-dist@6.4.0

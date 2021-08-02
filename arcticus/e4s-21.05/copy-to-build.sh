@@ -1,3 +1,3 @@
 #!/bin/bash
 
-cp spack.yaml der_kommmissar.yaml ../build
+cp spack.yaml der_kommissar.yaml ../build
