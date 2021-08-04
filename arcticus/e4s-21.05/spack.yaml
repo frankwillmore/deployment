@@ -273,12 +273,11 @@ spack:
     - qt@5.15.2
     - qthreads@1.16 scheduler=distrib
 #    - qwt@6.1.6
-# ==> qwt: Executing phase: 'qmake'                                                                                                                  
-# ==> qwt: Executing phase: 'build'                                                                                                                  
-# ==> Error: ProcessError: Command exited with status 2:                                                                                             
-#     'make' '-j16'                                                                                                                                  
-                                                                                                                                                   
-# 58 errors found in build log:                                                                                                                      
+# ==> qwt: Executing phase: 'qmake'
+# ==> qwt: Executing phase: 'build'
+# ==> Error: ProcessError: Command exited with status 2:
+#     'make' '-j16'
+# 58 errors found in build log:
 #      31     g++ -c -pipe -Wall -W -O2 -fPIC  -DQT_NO_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_SHARED -DQT_THREAD_SUPPORT -I/soft/spack/opt/spack/lin 
 #             ux-opensuse_leap15-x86_64/gcc-9.3.0/qt-3.3.8b-axxsp3n42yevy64fhr7ze5i42py64v6r/mkspecs/default -I. -I/soft/spack/opt/spack/linux-opens 
 #             use_leap15-x86_64/gcc-9.3.0/qt-3.3.8b-axxsp3n42yevy64fhr7ze5i42py64v6r/include -Imoc/ -o obj/qwt_painter.o qwt_painter.cpp             
@@ -290,7 +289,6 @@ spack:
 #   >> 37     qwt_interval.h:14:10: fatal error: qmetatype.h: No such file or directory                                                              
 #      38        14 | #include <qmetatype.h>                                                                                                         
 #      39           |          ^~~~~~~~~~~~~                                                                                                         
-
     - raja@0.13.0
     - rempi@1.1.0
     - scr@3.0rc1
@@ -329,7 +327,7 @@ spack:
     #- variorum
     #- veloc
 
-#############  # whole cascade of specs will not build, ultimately because of openblas not building on icelake
+#############  The cascade of specs below will not build, ultimately because of openblas not building on icelake (Arcticus host) with gcc 9.3.0
 # 
 # ==> Warning: Skipping build of lapackpp-2021.04.00-jtuqt6n6gp455gbsw64reatezyddbgem since openblas-0.3.10-hhkut7o6zuilwqxcz7uwc6pecm25cjim failed
 # ==> Warning: Skipping build of warpx-21.05-6rq2h7hozwotb7lm2g4ieptnjtq76o3a since lapackpp-2021.04.00-jtuqt6n6gp455gbsw64reatezyddbgem failed   
