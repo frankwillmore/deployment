@@ -13,4 +13,5 @@ compilers:
     modules: []
     environment: {}
     extra_rpaths: []
-
+mirrors:
+  spack-mirror: file:///soft/spack-mirror
